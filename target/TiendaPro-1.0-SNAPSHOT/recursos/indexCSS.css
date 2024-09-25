@@ -1,0 +1,92 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 10 mar. 2023, 11:08:25
+    Author     : usumaniana
+*/
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 100%;
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    
+}
+
+h1 {
+    text-align: center;
+    color: #7364a1;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f1f0f5;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+form h2 {
+    margin-top: 0;
+    white-space: nowrap;
+}
+
+input[type="text"],
+input[type="password"] {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+    background-color: #f2f2f2;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #493c7d;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #7364a1;
+}
+
+.form-container {
+    display: flex;
+    justify-content: space-between;
+    width: 450px;
+    flex-wrap: wrap;
+}
+
+.form-container > div {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 480px) {
+    .form-container {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .form-container > div {
+        width: 100%;
+    }
+}

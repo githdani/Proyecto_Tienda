@@ -1,0 +1,260 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 27 may. 2023, 13:02:01
+    Author     : dani1
+*/
+body {
+    margin: 0;
+    max-width: 100%;
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    background-color: transparent;
+    color: #fff; 
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    background: rgba(73, 60, 125, 0.8);
+    backdrop-filter: blur(10px);
+}
+
+.navbar-brand{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #499959 ;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar-menu {
+    position: relative;
+
+    
+}
+
+.menu-trigger {
+    cursor: pointer;
+    color: #e1dcf2;
+    text-align: center;
+    font-size: 20px;
+}
+
+.navbar-submenu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    position: absolute;
+    background-color: #7364a1;
+    left: 0;
+    top: 100%;
+}
+
+.navbar-menu:hover .navbar-submenu {
+    display: block;
+}
+
+.navbar-submenu li {
+    display: block;
+}
+
+.navbar-submenu a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #e1dcf2;
+    background-color: #7364a1;
+}
+
+.navbar-submenu a:hover {
+    background-color: #5d508f;
+}
+
+.user{
+    color: #e1dcf2; 
+    font-size: 20px;
+}
+
+.user-menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  color: black;
+}
+
+.user-menu > li {
+  position: relative;
+}
+
+.user-submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #7364a1;
+  padding: 0;
+}
+
+
+.user-menu > li:hover .user-submenu {
+  display: block;
+}
+
+.user-menu a {
+    display: block;
+    padding: 10px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #e1dcf2;
+    
+}
+
+.user-menu a:hover {
+  background-color: #5d508f; /* Cambiar el fondo al pasar el ratón */
+}
+
+.user-menu li {
+  display: block;
+  white-space: nowrap; /* Evita que el texto salte de línea */
+}
+
+/* Estilos para el contenido principal */
+main {
+    
+    padding: 100px;
+}
+
+.product-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 600px; 
+    margin: 0 auto; 
+    background-color: #f1f0f5; 
+    padding: 20px;
+    border-radius: 10px;
+
+}
+
+.product-container img {
+    margin-right: 20px; /* Espacio entre la imagen y el texto */
+}
+
+.product-details {
+    text-align: left;
+}
+
+/*ENVIAR COMENTARIO*/
+
+.review-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #f1f0f5;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.rating-stars {
+    display: inline-block;
+    direction: rtl; /* Invierte la dirección de izquierda a derecha */
+}
+
+.rating-stars input[type="radio"] {
+    display: none;
+}
+
+.rating-stars label {
+    display: inline-block;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    background-image: url('star.png'); /* Reemplaza 'star.png' con la ruta de tu imagen de estrella */
+    background-size: cover;
+}
+
+.rating-stars label:hover,
+.rating-stars label:hover ~ label,
+.rating-stars input[type="radio"]:checked ~ label {
+    background-image: url('star-yellow.png'); /* Reemplaza 'star-yellow.png' con la ruta de tu imagen de estrella amarilla */
+}
+
+.submit-btn {
+    background-color: #493c7d;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #7364a1;
+}
+
+textarea {
+    font-family: inherit;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    max-width: 100%;
+    resize: none;
+}
+
+/*COMENTARIO*/
+
+.comment {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #f1f0f5;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.comment-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.comment-header h3 {
+  margin: 0;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+}
+
+textarea {
+  width: 100%;
+  resize: none;
+  font-family: inherit;
+  border-radius: 5px;
+  padding: 5px;
+}

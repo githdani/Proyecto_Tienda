@@ -1,0 +1,216 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 25 may. 2023, 21:09:16
+    Author     : dani1
+*/
+/* Estilos para el header */
+/* Estilos para el header */
+/* Estilos para el header */
+body {
+    margin: 0;
+    max-width: 100%;
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    background-color: transparent;
+    color: #fff; 
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    background: rgba(73, 60, 125, 0.8);
+    backdrop-filter: blur(10px);
+}
+
+.navbar-brand{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #499959 ;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar-menu {
+    position: relative;
+
+    
+}
+
+.menu-trigger {
+    cursor: pointer;
+    color: #e1dcf2;
+    text-align: center;
+    font-size: 20px;
+}
+
+.navbar-submenu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    position: absolute;
+    background-color: #7364a1;
+    left: 0;
+    top: 100%;
+}
+
+.navbar-menu:hover .navbar-submenu {
+    display: block;
+}
+
+.navbar-submenu li {
+    display: block;
+}
+
+.navbar-submenu a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #e1dcf2;
+    background-color: #7364a1;
+}
+
+.navbar-submenu a:hover {
+    background-color: #5d508f;
+}
+
+.user{
+    color: #e1dcf2; 
+    font-size: 20px;
+}
+
+.user-menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  color: black;
+}
+
+.user-menu > li {
+  position: relative;
+}
+
+.user-submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #7364a1;
+  padding: 0;
+}
+
+
+.user-menu > li:hover .user-submenu {
+  display: block;
+}
+
+.user-menu a {
+    display: block;
+    padding: 10px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #e1dcf2;
+    
+}
+
+.user-menu a:hover {
+  background-color: #5d508f; /* Cambiar el fondo al pasar el ratón */
+}
+
+.user-menu li {
+  display: block;
+  white-space: nowrap; /* Evita que el texto salte de línea */
+}
+
+/* Estilos para el contenido principal */
+main {
+    
+    padding: 100px;
+}
+
+.product-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    
+}
+
+.product-box {
+    background-color: #f1f0f5; /* Color de fondo del producto */
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 20%;
+    text-align: center;
+    border-radius: 10px;
+    
+}
+
+.product-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.product-box img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.product-box:hover img {
+    transform: scale(1.1);
+}
+
+.product-box h5 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.product-box p {
+    margin: 0;
+}
+
+.product-box a {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: #493c7d;
+    color: #fff;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.product-box a:hover {
+    background-color: #7364a1;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-button {
+    flex: 1;
+    text-align: left;
+}
+
+.right-button {
+    flex: 1;
+    text-align: right;
+}
+
+

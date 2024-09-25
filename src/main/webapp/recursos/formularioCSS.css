@@ -1,0 +1,146 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 10 mar. 2023, 10:32:24
+    Author     : usumaniana
+*/
+
+body {
+    background-color: #2b2d42;
+    color: black;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 100%;
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+h1 {
+  color: #7364a1;
+  font-size: 32px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f1f0f5;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+input[type="text"]{
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    font-size: 16px;
+    padding: 8px;
+    width: 100%;
+}
+select {
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  font-size: 16px;
+  padding: 8px;
+  width: 100%;
+  border-radius: 10px;
+  background-color: #f1f0f5;
+}
+
+select {
+  margin-bottom: 20px;
+}
+
+input[type="submit"] {
+    background-color: #493c7d;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #7364a1;
+}
+
+textarea {
+    font-family: inherit;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    max-width: 100%;
+    resize: none;
+}
+
+
+a {
+    display: inline-block;
+    background-color: #493c7d;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+}
+
+a:hover{
+  background-color: #7364a1;  
+}
+
+input[type="text"]{
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+    background-color: #f2f2f2;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/*Tipo file----------------------------*/
+.file-input {
+  position: relative;
+  overflow: hidden;
+}
+
+.file-label {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #493c7d;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.file-input input[type="file"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.file-label:hover {
+  background-color: #7364a1;
+}
+
